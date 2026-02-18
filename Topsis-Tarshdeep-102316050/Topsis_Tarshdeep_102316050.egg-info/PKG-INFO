@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: Topsis-Tarshdeep-102316050
+Version: 0.2
+Summary: TOPSIS implementation for multi-criteria decision making
+Home-page: https://github.com/Tarshdeep2210/Topsis-Tarshdeep-102316050
+Author: Tarshdeep Kaur
+Author-email: tarshdeepkaur1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Topsis-Tarshdeep-102316050
+
+This Python package implements TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) for multi-criteria decision making.
+
+## Installation
+```bash
+pip install Topsis-Tarshdeep-102316050
