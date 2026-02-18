@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-cli = topsis.topsis:main
