@@ -2,7 +2,7 @@
 
 A Python package to implement the **Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)** method for multi-criteria decision making.
 
-##  About TOPSIS
+## About TOPSIS
 
 TOPSIS is a multi-criteria decision-making (MCDM) technique proposed by
 Hwang and
@@ -13,7 +13,7 @@ The core idea:
 * The best alternative should have the **shortest distance from the ideal solution**
 * And the **farthest distance from the negative-ideal solution**
 
-##  Mathematical Steps of TOPSIS
+## Mathematical Steps of TOPSIS
 
 1. Normalize the decision matrix
 2. Multiply by weights
@@ -22,7 +22,7 @@ The core idea:
 5. Calculate TOPSIS score
 6. Rank alternatives based on score
 
-##  Installation
+## Installation
 
 After uploading to PyPI:
 
@@ -30,7 +30,7 @@ After uploading to PyPI:
 pip install Topsis-Tarshdeep-102316050
 ```
 
-##  Usage (Command Line)
+## Usage (Command Line)
 
 ```bash
 python -m topsis.topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileName>
@@ -42,7 +42,7 @@ python -m topsis.topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileNam
 python -m topsis.topsis data.csv "1,1,1,2" "+,+,-,+" output.csv
 ```
 
-##  Input File Format
+## Input File Format
 
 * Must be a `.csv` file
 * First column → Alternatives (non-numeric allowed)
@@ -58,7 +58,7 @@ M2,30000,256,16
 M3,20000,128,8
 ```
 
-##  Output Format
+## Output Format
 
 Output file will contain:
 
@@ -66,17 +66,17 @@ Output file will contain:
 * Topsis Score
 * Rank (1 = Best)
 
-##  Error Handling Implemented
+## Error Handling
 
-The program checks for:
+The program validates inputs before processing and handles errors appropriately.
 
-✔ Correct number of parameters
-✔ File not found exception
-✔ Minimum 3 columns
-✔ Numeric values from 2nd column onwards
-✔ Equal number of weights, impacts, and criteria
-✔ Impacts must be only '+' or '-'
-✔ Weights and impacts must be comma-separated
+* Checks correct number of command-line parameters
+* Handles **File Not Found** exception
+* Ensures input file has **at least 3 columns**
+* Validates that columns from 2nd onward contain **numeric values only**
+* Ensures number of **weights, impacts, and criteria are equal**
+* Validates impacts must be only `'+'` or `'-'`
+* Ensures weights and impacts are **comma-separated**
 
 Appropriate error messages are displayed for invalid inputs.
 
@@ -88,7 +88,7 @@ Package name follows required format:
 Topsis-Tarshdeep-102316050
 ```
 
-##  Testing the Package
+## Testing the Package
 
 After installation:
 
@@ -97,19 +97,19 @@ pip install Topsis-Tarshdeep-102316050
 python -m topsis.topsis data.csv "1,1,1" "+,+,-" output.csv
 ```
 
-##  Assumptions
+## Assumptions
 
 * Missing values are not allowed
 * CSV file must be properly formatted
 * All criteria are independent
 * Ranking is based purely on mathematical TOPSIS score
 
-##  Author
+## Author
 
 Tarshdeep Kaur
 Roll Number: 102316050
 
-#  Now What You Should Do
+# Now What You Should Do
 
 1. Paste this into your `README.md`
 2. Commit and push
