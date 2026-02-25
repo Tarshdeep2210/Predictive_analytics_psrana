@@ -127,6 +127,7 @@ python -m twine upload dist/*
 # Assignment 5 — Apply TOPSIS to Find Best Pre-trained Model (Text Summarization)
 
 ## Objective
+
 To evaluate multiple **pre-trained text summarization models** on a common dataset and determine the best model using the **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** multi-criteria decision-making method.
 
 ---
@@ -189,6 +190,7 @@ Parameters | Cost | 0.10 |
 **Parameters:** 766.57 Million  
 
 ### Conclusion
+
 According to TOPSIS ranking considering both **quality metrics and efficiency**, **PEGASUS-XSum** is the best performing summarization model among the evaluated models.
 
 ---
@@ -196,6 +198,7 @@ According to TOPSIS ranking considering both **quality metrics and efficiency**,
 # Assignment 6 — Data Generation using Modelling & Simulation + ML Comparison
 
 ## Objective
+
 To generate a dataset using a **simulation model**, run **1000 simulations**, and compare multiple machine learning models to identify the best predictor.
 
 ---
@@ -228,7 +231,8 @@ Days | 60 | 200 |
 
 - Total simulations: **1000**
 - Runtime: **2.39 seconds**
-- Output file:
+- Output file:sir_simulation_dataset_1000.csv
+- 
 ### Generated Features
 
 Inputs:
@@ -307,6 +311,7 @@ Metrics:
 - RMSE: 0.00387
 
 ### Conclusion
+
 The **ExtraTrees ensemble model** achieved the highest predictive accuracy with minimal error, making it the best model for predicting epidemic peak infection from simulation parameters.
 
 ---
@@ -314,6 +319,7 @@ The **ExtraTrees ensemble model** achieved the highest predictive accuracy with 
 # Assignment 7 — Mashup Application (CLI + WebApp)
 
 ## Objective
+
 Develop a mashup system that:
 
 1. Downloads N YouTube videos of a singer
@@ -329,7 +335,9 @@ File name:102316050.py
 
 ### Usage
 
+```
 python <RollNumber>.py "<SingerName>" <NumberOfVideos> <AudioDuration> <OutputFileName>
+```
 
 Example:
 
