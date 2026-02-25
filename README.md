@@ -104,26 +104,6 @@ python -m topsis.topsis data.csv "1,1,1" "+,+,-" output.csv
 * All criteria are independent
 * Ranking is based purely on mathematical TOPSIS score
 
-## Author
-
-Tarshdeep Kaur
-Roll Number: 102316050
-
-# Now What You Should Do
-
-1. Paste this into your `README.md`
-2. Commit and push
-3. Build package:
-
-```bash
-python -m build
-```
-
-4. Upload to PyPI:
-
-```bash
-python -m twine upload dist/*
-```
 # Assignment 5 — Apply TOPSIS to Find Best Pre-trained Model (Text Summarization)
 
 ## Objective
